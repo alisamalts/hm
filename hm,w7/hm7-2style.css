@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+main .cont3 h2, main .cont2 .block h2 {
+  font-family: "Lora", serif;
+  font-size: 42px;
+  color: rgb(30, 30, 30);
+}
+
+main .gallery a, main .cont2 .block a {
+  color: orange;
+  text-decoration: none;
+}
+main .gallery a:hover, main .cont2 .block a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont1 {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cont2 {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cont3 {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+}
+body header {
+  background-image: url(background1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 490px) {
+  body header {
+    background-position: left;
+  }
+}
+body header .cont1 {
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+body header .cont1 .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  min-height: 80px;
+  align-items: center;
+}
+body header .cont1 .nav .logo {
+  font-family: "Lora", serif;
+  font-size: 28px;
+}
+body header .cont1 .nav .burger {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  body header .cont1 .nav .burger {
+    display: block;
+  }
+}
+body header .cont1 .nav nav {
+  max-width: 478px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  body header .cont1 .nav nav {
+    display: none;
+  }
+}
+body header .cont1 .nav nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lora", serif;
+  font-size: 18px;
+}
+body header .cont1 .nav nav a:hover {
+  text-decoration: underline;
+}
+body header .cont1 .wrap_title {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 490px) {
+  body header .cont1 .wrap_title {
+    justify-content: space-around;
+    padding-bottom: 70px;
+  }
+}
+body header .cont1 .wrap_title h1 {
+  font-family: "Lora", serif;
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+}
+@media screen and (max-width: 490px) {
+  body header .cont1 .wrap_title h1 {
+    font-size: 2em;
+    padding: 10px;
+  }
+}
+body header .cont1 .par {
+  min-height: 76px;
+  max-width: 600px;
+  align-self: center;
+  padding: 10px;
+}
+body header .cont1 .par p {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 490px) {
+  body header .cont1 .par p {
+    font-size: 1.2em;
+    padding-bottom: 70px;
+  }
+}
+body header .cont1 button {
+  align-self: center;
+  font-family: "Lora", serif;
+  color: white;
+  min-height: 56px;
+  min-width: 344px;
+  border: 0.86px solid rgba(255, 255, 255, 0.6);
+  border-radius: 42px;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.15);
+}
+body header .cont1 button:hover {
+  font-size: larger;
+}
+@media screen and (max-width: 490px) {
+  body header .cont1 button {
+    min-width: 170px;
+  }
+}
+
+main .cont2 {
+  background-color: white;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 20px;
+}
+main .cont2 .block {
+  display: grid;
+  align-items: center;
+}
+main .cont2 .block_1 {
+  align-items: center;
+}
+@media screen and (max-width: 980px) {
+  main .cont2 {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 230px);
+    grid-template-rows: 35% 150px;
+    padding-left: 100px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+  main .cont2 .block_1 {
+    grid-area: 1/1/2/4;
+    justify-content: center;
+    max-width: 680px;
+    min-height: 90px;
+  }
+}
+@media screen and (max-width: 850px) {
+  main .cont2 {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 746px) {
+  main .cont2 {
+    display: none;
+  }
+}
+main .cont3 {
+  min-height: 900px;
+  display: grid;
+  grid-template-rows: 10% 10% 1fr 10%;
+  row-gap: 20px;
+}
+@media screen and (max-width: 375px) {
+  main .cont3 {
+    grid-template-rows: 5% 5% 1fr 5%;
+  }
+}
+main .cont3 h2 {
+  align-self: end;
+  grid-row: 1/2;
+  text-align: center;
+}
+main .cont3 .furniture_kind {
+  min-height: 57px;
+  min-width: 340px;
+  justify-self: center;
+  align-self: end;
+  border-radius: 44px;
+  background: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px;
+}
+main .cont3 .furniture_kind p {
+  font-family: "Lora", serif;
+  font-size: 18px;
+}
+main .cont3 .furniture_card {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  justify-content: space-around;
+  align-items: baseline;
+}
+main .cont3 .furniture_card .chairs:hover {
+  transform: scale(1.2);
+}
+main .cont3 .furniture_card .discription {
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+main .gallery {
+  text-align: center;
+}/*# sourceMappingURL=hm7-2style.css.map */
