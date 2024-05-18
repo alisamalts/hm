@@ -1,0 +1,68 @@
+.container {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+body .cont0 {
+  width: 100%;
+  height: 100vh;
+  padding: 1%;
+  max-width: 2560px;
+  background-color: rgb(215, 215, 215);
+  display: flex;
+  flex-direction: column;
+}
+body .cont0 header {
+  background-color: rgb(65, 64, 64);
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-content: center;
+  display: flex;
+}
+body .cont0 header .cont1 {
+  max-width: 885px;
+}
+body .cont0 header .cont1 .nav-link {
+  color: gray;
+}
+body .cont0 header .cont1 .nav-link:hover {
+  color: white;
+}
+body .cont0 main {
+  display: flex;
+  padding: 12px;
+  background-color: white;
+  flex-grow: 1;
+}
+body .cont0 main .cont2 {
+  max-width: 2560px;
+  display: flex;
+  flex-direction: column;
+}
+body .cont0 main .cont2 .cont3 {
+  background-color: rgb(215, 215, 215);
+  padding: 30px;
+  align-self: center;
+  max-width: 860px;
+}
+body .cont0 main .cont2 .cont4 {
+  padding-top: 15px;
+  align-self: center;
+  max-width: 860px;
+}
+body .cont0 main .cont2 .cont4 .row {
+  row-gap: 15px;
+}
+body .cont0 main .cont2 .cont4 .row .card {
+  min-width: 12rem;
+}
+body .cont0 footer .cont5 {
+  background-color: rgb(65, 64, 64);
+  color: white;
+  height: 6vh;
+  display: flex;
+  max-width: 2560px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}/*# sourceMappingURL=hm8-1style.css.map */
